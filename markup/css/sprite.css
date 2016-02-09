@@ -1,0 +1,86 @@
+.icn,
+.acc_h:after,
+.bx-prev,
+.bx-next,
+.page_header_location_actual:after,
+.ui-slider .ui-slider-handle,
+.curselect+.ui-selectmenu-button span.ui-icon,
+.offer_details_list li:before,
+.simple_cb:before
+{background:url(../images/sprite.png);background-repeat: no-repeat;display: inline-block;}
+
+
+.acc_h:after,
+.offer_details_list li:before,
+.page_header_location_actual:after,
+.simple_cb:before
+{position: absolute;content: '';}
+
+
+.map-geo-icn { background-position: -0px -0px; width: 38px; height: 48px; }
+.map-geo-icn-h { background-position: -0px -48px; width: 38px; height: 48px; }
+
+.mastercard { background-position: -0px -787px; width: 30px; height: 18px; }
+.benefits-check { background-position: -0px -830px; width: 25px; height: 27px; }
+.icn-side-pigbank { background-position: -0px -857px; width: 25px; height: 27px; }
+.icn-side-moneypile { background-position: -0px -884px; width: 24px; height: 19px; }
+.icn-side-visa { background-position: -0px -903px; width: 22px; height: 17px; }
+
+.icn-mousescroll { background-position: -0px -944px; width: 21px; height: 32px; }
+
+.icn-clock { background-position: -24px -884px; width: 14px; height: 14px; }
+.icn-document { background-position: -21px -950px; width: 14px; height: 16px; }
+.rates-down { background-position: -26px -805px; width: 10px; height: 7px; }
+.rates-up { background-position: -26px -812px; width: 10px; height: 7px; }
+
+
+.arr-small-l { background-position: -30px -787px; width: 8px; height: 14px; }
+.arr-small-r { background-position: -21px -966px; width: 8px; height: 14px; }
+
+.ui-slider .ui-slider-handle { background-position: -0px -753px; width: 34px; height: 34px; }
+
+
+.icn_navi_1 { background-position: -0px -96px; width: 37px; height: 32px; }
+.icn_navi_3 { background-position: -0px -160px; width: 37px; height: 40px; }
+.icn_navi_4 { background-position: -0px -681px; width: 34px; height: 36px; }
+.icn_navi_5 { background-position: -0px -533px; width: 35px; height: 35px; }
+.icn_navi_2 { background-position: -0px -240px; width: 37px; height: 37px; }
+.icn_navi_6 { background-position: -0px -366px; width: 36px; height: 31px; }
+.icn_navi_7 { background-position: -0px -603px; width: 35px; height: 39px; }
+.icn_navi_8 { background-position: -0px -314px; width: 37px; height: 26px; }
+a.active .icn_navi_1 { background-position: -0px -128px; width: 37px; height: 32px; }
+a.active .icn_navi_3 { background-position: -0px -200px; width: 37px; height: 40px; }
+a.active .icn_navi_4 { background-position: -0px -717px; width: 34px; height: 36px; }
+a.active .icn_navi_5 { background-position: -0px -568px; width: 35px; height: 35px; }
+a.active .icn_navi_2 { background-position: -0px -277px; width: 37px; height: 37px; }
+a.active .icn_navi_6 { background-position: -0px -397px; width: 36px; height: 31px; }
+a.active .icn_navi_7 { background-position: -0px -642px; width: 35px; height: 39px; }
+a.active .icn_navi_8 { background-position: -0px -340px; width: 37px; height: 26px; }
+.icn_toggle_nav { background-position: -0px -805px; width: 26px; height: 25px; }
+a:hover .icn_toggle_nav { background-position: -0px -1054px;}
+
+
+.icn_search { background-position: -22px -920px; width: 15px; height: 15px; }
+.focus .icn_search, .icn_search:hover { background-position: -22px -935px; width: 15px; height: 15px; }
+
+.icn_of_dir { background-position: -0px -498px; width: 35px; height: 35px; }
+.icn_of_dir:hover { background-position: -0px -428px;}
+.opened .icn_of_dir { background-position: -0px -463px;}
+.acc_h:after { background-position: -0px -996px; width: 20px; height: 20px;opacity: 0.5;-webkit-transition: transform 0.3s;-o-transition: transform 0.3s;transition: transform 0.3s;-webkit-transform: rotate(180deg);-ms-transform: rotate(180deg);-o-transform: rotate(180deg);transform: rotate(180deg);}
+.acc_h:hover:after { background-position: -0px -1079px;opacity: 1;}
+.opened .acc_h:after {opacity: 1;-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);}
+
+.bx-prev { background-position: -25px -866px; width: 8px; height: 13px; text-indent: -9999px;}
+.bx-prev:hover { background-position: -25px -853px; width: 8px; height: 13px; }
+.bx-next { background-position: -29px -979px; width: 8px; height: 13px; text-indent: -9999px;}
+.bx-next:hover { background-position: -29px -966px; width: 8px; height: 13px; }
+
+.icn_key { background-position: -0px -920px; width: 22px; height: 12px; }
+a:hover .icn_key { background-position: -0px -932px; width: 22px; height: 12px; }
+.filter_form .acc_h:after { background-position: -0px -1016px;opacity: 1;position: relative;left: auto;right: auto;vertical-align: middle;margin-left: 6px;}
+.page_header_location_actual:after { background-position: -26px -819px; width: 9px; height: 17px;right: -20px;position: absolute;top: 5px;}
+.page_header_location_actual:hover:after { background-position: -25px -836px; width: 9px; height: 17px; }
+
+.curselect+.ui-selectmenu-button span.ui-icon{ background-position: -26px -819px; width: 9px; height: 17px;right: 10px;position: absolute;top: 0px;bottom: 0;margin: auto;}
+.offer_details_list li:before { background-position: -22px -903px; width: 15px; height: 17px; left: 0;}
+.simple_cb:before { background-position: -20px -1079px; width: 15px; height: 16px; }
