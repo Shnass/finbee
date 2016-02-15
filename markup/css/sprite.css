@@ -6,19 +6,19 @@
 .ui-slider .ui-slider-handle,
 .curselect+.ui-selectmenu-button span.ui-icon,
 .offer_details_list li:before,
-.simple_cb:before
+.simple_cb:before,
+.bank_card_phone .number:before
 {background:url(../images/sprite.png);background-repeat: no-repeat;display: inline-block;}
 
 
 .acc_h:after,
 .offer_details_list li:before,
 .page_header_location_actual:after,
-.simple_cb:before
+.simple_cb:before,
+.bank_card_phone .number:before
 {position: absolute;content: '';}
 
 
-.map-geo-icn { background-position: -0px -0px; width: 38px; height: 48px; }
-.map-geo-icn-h { background-position: -0px -48px; width: 38px; height: 48px; }
 
 .mastercard { background-position: -0px -787px; width: 30px; height: 18px; }
 .benefits-check { background-position: -0px -830px; width: 25px; height: 27px; }
@@ -30,8 +30,6 @@
 
 .icn-clock { background-position: -24px -884px; width: 14px; height: 14px; }
 .icn-document { background-position: -21px -950px; width: 14px; height: 16px; }
-.rates-down { background-position: -26px -805px; width: 10px; height: 7px; }
-.rates-up { background-position: -26px -812px; width: 10px; height: 7px; }
 
 
 .arr-small-l { background-position: -30px -787px; width: 8px; height: 14px; }
@@ -84,3 +82,26 @@ a:hover .icn_key { background-position: -0px -932px; width: 22px; height: 12px; 
 .curselect+.ui-selectmenu-button span.ui-icon{ background-position: -26px -819px; width: 9px; height: 17px;right: 10px;position: absolute;top: 0px;bottom: 0;margin: auto;}
 .offer_details_list li:before { background-position: -22px -903px; width: 15px; height: 17px; left: 0;}
 .simple_cb:before { background-position: -20px -1079px; width: 15px; height: 16px; }
+
+
+.icn_clocks{background-position: -24px -1269px; width: 15px; height: 15px;}
+.icn_type_small_money { background-position: 0 -1172px; width: 24px;height: 19px;} 
+.icn_type_small_car { background-position: 0 -1294px; height: 24px; width: 24px;top: -2px;} 
+.icn_type_small_pigbank { background-position: 0 -1232px; width: 25px; height: 27px; top: -8px;} 
+.icn_type_small_house { background-position: 0 -1138px; height: 24px; width: 24px;top: -4px;} 
+.icn_type_small_card { background-position: 0 -1109px; width: 25px; height: 19px;top: -1px;} 
+.icn_type_small_museum { background-position: 0 -1201px; height: 21px; width: 24px;top: -2px;} 
+.button_search { background-position: 0 -1269px; width: 15px; height: 15px; } 
+
+.icn_q{background-position: 0 -1318px;width: 16px;height: 16px;}
+.icn_mc{height: 12px;width: 20px;background-position: 0 -1342px;}
+.icn_visa{height: 8px;width: 22px;background-position: 0 -1334px;}
+
+.icn_dir_up { background-position: -26px -812px; width: 10px; height: 7px; }
+.icn_dir_down { background-position: -26px -805px; width: 10px; height: 7px; }
+
+.icn_geo_point { background-position: -0px -0px; width: 38px; height: 48px; }
+a:hover .icn_geo_point { background-position: -0px -48px; width: 38px; height: 48px; }
+
+.icn_back_link{background-position: 0 -1354px;width: 31px;height: 31px;}
+.bank_card_phone .number:before{background-position: 0 -1385px;width: 20px;height: 20px;left: -30px;top: 5px;}
