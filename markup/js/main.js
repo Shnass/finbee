@@ -2,6 +2,9 @@
 $(function(){
 	/*** CHECK WIDTH ***/
 	function if_mobile(){
+		if($(window).width()<760) return true;
+	}
+	function if_tab(){
 		if($(window).width()<1001) return true;
 	}
 
@@ -18,6 +21,22 @@ $(function(){
             adaptiveHeight: true
         }));
     })
+
+
+    if(if_tab()){
+	    $('.aside_testimonial_list').each(function(){
+	        var $this = $(this);
+	        $this.data('linkedEl', $this.bxSlider({
+	            auto: true,
+	            controls: true,
+	            pager: false,
+	            pause: 6500,
+	            autoHover: true,
+	            speed:500,
+	            adaptiveHeight: true
+	        }));
+	    })
+    }
 
 
 	/*** CUSTOM CHECKBOX ***/

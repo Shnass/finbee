@@ -246,8 +246,8 @@
                     <header class="page_title">
                         <div class="page_title_in">
                             <h1 class="h1">
-                                <a href="" class="h1_a"><span>Кредитные карты</span></a>
-                                <b>Дебетовые карты</b>
+                                <a href="" class="h1_a"><span>Кредитные <span class="mob_hide">карты</span></span></a>
+                                <b>Дебетовые <span class="mob_hide">карты</span></b>
                             </h1>
                         </div>
                     </header>
@@ -256,73 +256,74 @@
                             <div class="section_col_main">
                                 <form action="" class="filter_form">
                                     <div class="filter_form_in clearfix">
-                                        <div class="filter_row">
-                                            <div class="filter_cell filter_cell_03">
-                                                <div class="h5">Кредитный лимит</div>
-                                                <div class="sum_ammount_select">
-                                                    <input type="text" class="input_text_blue" >
-                                                    <div class="sum_selection mob_hide" data-min="100000" data-max="500000"></div>
+                                        <div class="filter_form_slim">
+                                            <div class="filter_row">
+                                                <div class="filter_cell filter_cell_03 filter_cell_fx">
+                                                    <div class="h5">Кредитный лимит</div>
+                                                    <div class="sum_ammount_select">
+                                                        <input type="text" class="input_text_blue" >
+                                                        <div class="sum_selection mob_hide" data-min="100000" data-max="500000"></div>
+                                                    </div>
+                                                    <div class="currency_select">
+                                                           <div class="currency_var cC"><input type="radio" name="cur_01" checked><span>Р</span></div><!--
+                                                        --><div class="currency_var cC"><input type="radio" name="cur_01"><span>$</span></div><!--
+                                                        --><div class="currency_var cC"><input type="radio" name="cur_01"><span>€</span></div>
+                                                    </div>
                                                 </div>
-                                                <div class="currency_select">
-                                                       <div class="currency_var cC"><input type="radio" name="cur_01" checked><span>Р</span></div><!--
-                                                    --><div class="currency_var cC"><input type="radio" name="cur_01"><span>$</span></div><!--
-                                                    --><div class="currency_var cC"><input type="radio" name="cur_01"><span>€</span></div>
-                                                </div>
-                                            </div>
-                                            <div class="filter_cell filter_cell_03">
-                                                <div class="h5">Остаток на конец месяца</div>
-                                                <div class="sum_ammount_select">
-                                                    <input type="text" class="input_text_blue" >
-                                                    <div class="sum_selection mob_hide" data-min="100000" data-max="500000"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr class="filter_hr">
-                                        <div class="filter_row">
-                                            <div class="h5">Бонусы</div>
-                                            <div class="cb_list_2 clearfix">
-                                                <div class="cb_list_cell">
-                                                    <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Авиа-мили</span></label></div>
-                                                    <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>CashBack</span></label></div>
-                                                </div>
-                                                <div class="cb_list_cell">
-                                                    <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>% на остаток</span></label></div>
-                                                    <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Благотворит-ть</span></label></div>
-                                                </div>
-                                                <div class="cb_list_cell">
-                                                    <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Интернет-банк</span></label></div>
-                                                    <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Техподдержка</span></label></div>
+                                                <div class="filter_cell filter_cell_03 filter_cell_fx">
+                                                    <div class="h5">Остаток на конец месяца</div>
+                                                    <div class="sum_ammount_select">
+                                                        <input type="text" class="input_text_blue" >
+                                                        <div class="sum_selection mob_hide" data-min="100000" data-max="500000"></div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <hr class="filter_hr">
-                                        <div class="filter_row additional_form_row">
-                                            <div class="additional_form_cell cell_8">
-                                                <label for="" class="label_h">Тип карты</label>
-                                                <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>VISA</span></label></div>
-                                                <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>MasterCard</span></label></div>
-                                                <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Amex</span></label></div>
-                                                <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Другие</span></label></div>
+                                            <hr class="filter_hr">
+                                            <div class="filter_row">
+                                                <div class="h5">Бонусы</div>
+                                                <div class="cb_list_2 clearfix">
+                                                    <div class="cb_list_cell">
+                                                        <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Авиа-мили</span></label></div>
+                                                        <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>CashBack</span></label></div>
+                                                    </div>
+                                                    <div class="cb_list_cell">
+                                                        <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>% на остаток</span></label></div>
+                                                        <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Благотворит-ть</span></label></div>
+                                                    </div>
+                                                    <div class="cb_list_cell">
+                                                        <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Интернет-банк</span></label></div>
+                                                        <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Техподдержка</span></label></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="filter_hr">
+                                            <div class="filter_row additional_form_row">
+                                                <div class="additional_form_cell cell_8">
+                                                    <label for="" class="label_h">Тип карты</label>
+                                                    <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>VISA</span></label></div>
+                                                    <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>MasterCard</span></label></div>
+                                                    <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Amex</span></label></div>
+                                                    <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Другие</span></label></div>
 
+                                                </div>
+                                                <div class="additional_form_cell">
+                                                    <label for="" class="label_h">Статус</label>
+                                                    <select name="" id="" class="curselect curselect_small">
+                                                        <option value="">Platinum</option>
+                                                        <option value="">Индивидуальный предприниматель</option>
+                                                        <option value="">Индивидуальный предприниматель</option>
+                                                        <option value="">Индивидуальный предприниматель</option>
+                                                        <option value="">Индивидуальный предприниматель</option>
+                                                        <option value="">Индивидуальный предприниматель</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                            <div class="additional_form_cell">
-                                                <label for="" class="label_h">Статус</label>
-                                                <select name="" id="" class="curselect curselect_small">
-                                                    <option value="">Platinum</option>
-                                                    <option value="">Индивидуальный предприниматель</option>
-                                                    <option value="">Индивидуальный предприниматель</option>
-                                                    <option value="">Индивидуальный предприниматель</option>
-                                                    <option value="">Индивидуальный предприниматель</option>
-                                                    <option value="">Индивидуальный предприниматель</option>
-                                                </select>
+                                            <hr class="filter_hr">
+                                            <div class="additional_form_row_2">
+                                                <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Без страхования</span></label></div>
+                                                <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Онлайн-заявка</span></label></div>
                                             </div>
                                         </div>
-                                        <hr class="filter_hr">
-                                        <div class="additional_form_row_2">
-                                            <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Без страхования</span></label></div>
-                                            <div class="additional_form_cb"><label for="" class="cC simple_cb"><span>Онлайн-заявка</span></label></div>
-                                        </div>
-
                                         <div class="filter_tip show_wide">
                                             <blockquote>
                                                 <p>Что такое «переплата»? Это сумма процентов и комиссий, которые  Вы заплатите банку сверх самого кредита. Хотите, чтобы переплата была минимальной? Тогда укажите: Валюту кредита; Размер вашей заработной  платы; Сумму кредита. Я найду для Вас лучшие варианты!</p>
@@ -961,7 +962,7 @@
                                 </div>
                             </div>
                             <div class="section_col_aside">
-                                <div class="aside_box aside_box_padded mob_hide">
+                                <div class="aside_box aside_box_padded mob_hide tab_hide">
                                     <div class="aside_box_in aside_box_navi">
                                         <ul class="aside_navi_slider">
                                             <li class="aside_navi_slide">
@@ -1012,7 +1013,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="aside_box aside_box_padded mob_hide">
+                                <div class="aside_box aside_box_padded mob_hide tab_hide">
                                     <div class="aside_box_in">
                                         <a href=""><img src="images/_temp/side_banner.jpg" alt=""></p>
                                     </div>
