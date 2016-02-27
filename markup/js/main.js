@@ -105,6 +105,9 @@ $(function(){
     $( ".curselect" ).curselect().curselect('widget').addClass('cs_select_short_btn');
 
 
+    $('.bank_address_units').jScrollPane();
+
+
 	/*** PRICE SELECTION  ***/
       $( ".sum_selection" ).each(function(){
         $(this).slider({
