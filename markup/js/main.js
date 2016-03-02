@@ -53,10 +53,22 @@ $(function(){
       })
 
 
+      $('.tabs_controls>*').click(function(e){
+      	e.preventDefault();
+      	$(this).addClass('on').siblings().removeClass('on');
+      	$(this).parents('.tabs').find('.tab:eq('+$(this).index()+')').addClass('on').siblings().removeClass('on');
+      }).first().click();
+
+
+
 	/*** MISC ACCORDION ***/
       $('.acc_h').click(function(e){
       	e.preventDefault();
       	$(this).parents('.acc').toggleClass('opened').find('.acc_c').slideToggle();
+      })
+
+      $('.acc_h a').click(function(e){
+      	e.stopPropagation();
       })
 
 
@@ -106,6 +118,7 @@ $(function(){
 
 
     $('.bank_address_units').jScrollPane();
+    $('.output_scrl').jScrollPane();
 
 
 	/*** PRICE SELECTION  ***/
@@ -115,7 +128,7 @@ $(function(){
           min: $(this).data('min'),
           max: $(this).data('max'),
           value: $(this).data('min'),
-          stop: function( event, ui ) {
+          slide: function( event, ui ) {
               $(this).parents('.sum_ammount_select').find('input[type="text"]').val(ui.value);
           }
         });

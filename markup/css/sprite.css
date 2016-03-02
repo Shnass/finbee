@@ -9,7 +9,9 @@
 .simple_cb:before,
 .bank_card_phone .number:before,
 .location_select .link_local_alt:after,
-.bank_address_unit .hours:before
+.bank_address_unit .hours:before,
+.document_list li:before,
+.benefits_list li:before
 {background:url(../images/sprite.png);background-repeat: no-repeat;display: inline-block;}
 
 
@@ -19,19 +21,21 @@
 .simple_cb:before,
 .bank_card_phone .number:before,
 .location_select .link_local_alt:after,
-.bank_address_unit .hours:before
+.bank_address_unit .hours:before,
+.document_list li:before,
+.benefits_list li:before
 {position: absolute;content: '';}
 
 
 
-.mastercard { background-position: -0px -787px; width: 30px; height: 18px; }
+.icn_mcbig { background-position: -0px -787px; width: 30px; height: 18px; margin-right: 5px;}
 .benefits-check { background-position: -0px -830px; width: 25px; height: 27px; }
 .icn-side-pigbank { background-position: -0px -857px; width: 25px; height: 27px; }
 .icn-side-moneypile { background-position: -0px -884px; width: 24px; height: 19px; }
 .icn-side-visa { background-position: -0px -903px; width: 22px; height: 17px; }
 
 
-.icn-document { background-position: -21px -950px; width: 14px; height: 16px; }
+
 
 
 .ui-slider .ui-slider-handle { background-position: -0px -753px; width: 34px; height: 34px; }
@@ -135,3 +139,24 @@ a:hover .icn_reload{background-position: 0 -1449px;}
 .icn_product_1{width: 26px;height: 28px;background-position: 0 -1738px;}
 .icn_product_2{width: 24px;height: 19px;background-position: 0 -1766px;}
 .icn_product_3{width: 22px;height: 17px;background-position: 0 -1785px;}
+.document_list li:before { background-position: -21px -950px; width: 14px; height: 16px; left: 0;}
+.icn_q_blue{width: 16px;height: 16px;background-position: -24px -1721px;top: 1px;}
+
+
+
+.icn_bank_nav_1 { background-position: -0px -1802px; width: 45px; height: 30px; }
+.icn_bank_nav_2 { background-position: -0px -1832px; width: 30px; height: 40px; }
+.icn_product_6 { background-position: -0px -1872px; width: 25px; height: 27px; }
+.icn_product_4 { background-position: -0px -1899px; width: 24px; height: 24px; }
+.icn_product_5 { background-position: -24px -1899px; width: 24px; height: 24px; }
+.icn_more_solid{width: 52px;height: 52px;background-position: 0 -1923px;}
+a:hover .icn_more_solid{background-position: 0 -1975px;}
+
+.geo-back { background-position: -0px -2027px; width: 46px; height: 46px; }
+.geo-back-h { background-position: -0px -2073px; width: 46px; height: 46px; }
+.index-arr-more-rates { background-position: -0px -2119px; width: 33px; height: 25px; }
+.search-small { background-position: -33px -2135px; width: 12px; height: 12px; }
+
+
+.benefits_list li:before { background-position: -0px -2144px; width: 25px; height: 27px; left: 0;top: -4px;}
+.icn_calc { background-position: -33px -2119px; width: 13px; height: 16px; position: absolute;left: -18px;top: 1px;}
