@@ -65,7 +65,7 @@ a{color: #1578cc;outline:none !important;}
 a.invert{color: #000000;}
 a.invert:hover{color: #1578cc;}
 a:hover{color: #242c45;}
-input,button,textarea{font-family:'roboto';-webkit-appearance:none;border-radius: 0;}
+input,button,textarea{font-family:'roboto';border-radius: 0;}
 h1, .h1{font-family: muller;font-size: 29px;font-weight: bold;}
 h2, .h2{font-size: 27px;margin-bottom: 30px;font-family: muller;font-weight: normal;}
 .h2_alt{font-size: 25px;margin-bottom: 25px;font-family: muller;font-weight: bold;}
@@ -203,6 +203,7 @@ max-height: 36px;}
 .additional_form_cb .icn_q{position: relative;top: 4px;margin-left: 4px;}
 .additional_form_cb_inline{margin-bottom: 0;white-space: nowrap;padding-top: 8px;}
 .simple_cb{position: relative;padding-left: 20px;display: inline-block;}
+.simple_cb input{display: none;}
 .simple_cb:before{left: 0;top: 0px;position: absolute;}
 .simple_cb:before {background: url(../images/checkbox.png); background-position: 0px 0px; width: 15px; height: 17px; }
 .simple_cb.checked:before {background-position: -15px 0px;}
