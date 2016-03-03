@@ -98,6 +98,9 @@ $(function(){
 			$('html').toggleClass('navicalled')
 		}
 	})
+	$('[data-navi-type]').click(function(e){
+		e.stopPropagation();
+	})
 	$('html').click(function(e){
 		e.preventDefault()
 		if($(this).hasClass('navicalled')){
@@ -119,6 +122,10 @@ $(function(){
 
     $('.bank_address_units').jScrollPane();
     $('.output_scrl').jScrollPane();
+
+    $('.rated').each(function(){
+    	$(this).width(parseInt($(this).parents('.rate').width()/5*parseFloat($(this).text()))+'px');
+    })
 
 
 	/*** PRICE SELECTION  ***/

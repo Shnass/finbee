@@ -203,7 +203,9 @@ max-height: 36px;}
 .additional_form_cb .icn_q{position: relative;top: 4px;margin-left: 4px;}
 .additional_form_cb_inline{margin-bottom: 0;white-space: nowrap;padding-top: 8px;}
 .simple_cb{position: relative;padding-left: 20px;display: inline-block;}
-.simple_cb:before{left: 0;top: 1px;position: absolute;}
+.simple_cb:before{left: 0;top: 0px;position: absolute;}
+.simple_cb:before {background: url(../images/checkbox.png); background-position: 0px 0px; width: 15px; height: 17px; }
+.simple_cb.checked:before {background-position: -15px 0px;}
 
 .rate_select{list-style-type: none;padding: 0;margin: 0;}
 .rate_select li{list-style-type: none;padding: 0;margin: 0;text-align: center;position: relative;display: inline-block;vertical-align: top;background: url(../images/rate_big.png);}
