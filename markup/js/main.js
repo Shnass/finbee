@@ -124,7 +124,9 @@ $(function(){
     $('.output_scrl').jScrollPane();
 
     $('.rated').each(function(){
-    	$(this).width(parseInt($(this).parents('.rate').width()/5*parseFloat($(this).text()))+'px');
+    	var cf=1;
+    	if($(this).parents('.rate').hasClass('rate10')) {cf=2};
+    	$(this).width(parseInt($(this).parents('.rate').width()/5*parseFloat($(this).text())/cf)+'px');
     })
 
 
@@ -137,7 +139,55 @@ $(function(){
           value: $(this).data('min'),
           slide: function( event, ui ) {
               $(this).parents('.sum_ammount_select').find('input[type="text"]').val(ui.value);
-          }
+          },
+		    create: function(event, ui){
+
+		        $(this).slider('value',parseInt($(this).parents('.sum_ammount_select').find('input[type="text"]').val()));
+		    }
         });
       })
+
+jpg_compare();
+
+
+
+
+
 })
+
+function moveOverlay(amt){
+	var overlay=$('.over_jpg'), current=parseInt(overlay.css('top'));
+	overlay.css('top',current+amt)
+}
+
+function jpg_compare(){
+	var img=$('body').attr('data-over-src') || 'images/over.jpg';
+	$('body').append('<div class="over_jpg" style="background-image:url('+img+')"></div>')
+	$('body').on("click",".over_jpg",function(){
+	  $(this).toggleClass('h');
+	})
+
+	$(document).bind("keypress", function(e) {
+	  if(e.which==17){
+	    $('.over_jpg').toggle();
+	  }
+	  if(e.which==44){
+	    moveOverlay(-1)
+	  }
+	  if(e.which==46){
+	    moveOverlay(1)
+	  }
+	  if(e.which==60){
+	    moveOverlay(-10)
+	  }
+	  if(e.which==62){
+	    moveOverlay(10)
+	  }
+	  if(e.which==109){
+	    moveOverlay(-100)
+	  }
+	  if(e.which==47){
+	    moveOverlay(100)
+	  }
+	});
+}
