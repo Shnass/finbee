@@ -22,6 +22,18 @@ $(function(){
         }));
     })
 
+    $('.output_filter li').click(function(e){
+    	e.preventDefault();
+    	$(this).parents('.output_filter').find('.selected').removeClass('selected');
+    	$(this).find('a').addClass('selected')
+    	console.log('SOME AJAX EVENT');
+    })
+
+    $('.btn_ajax').click(function(e){
+    	e.preventDefault();
+    	console.log('SOME AJAX EVENT');
+    })
+
 
     if(if_tab()){
 	    $('.aside_testimonial_list').each(function(){
@@ -43,9 +55,10 @@ $(function(){
       $('.cC').click(function(e){
 	    e.preventDefault();
 	    if($(this).find(':radio')) $("input[name='"+$(this).find('input').attr('name')+"']").prop('checked', false).parents('.cC').removeClass('checked');
-	    	$(this).toggleClass('checked').find('input').click()
+	    	$(this).toggleClass('checked').find('input').click();
+	    	console.log('OPTION CHANGED '+$(this).find('input').val());
 	  	}).each(function(){
-       	if($(this).find('input').is(':checked')) $(this).addClass('checked')
+       	if($(this).find('input').is(':checked')) $(this).addClass('checked');
       })
 
       $('.cC input').click(function(e){
@@ -117,7 +130,11 @@ $(function(){
         return li.appendTo( ul );
       }
     });
-    $( ".curselect" ).curselect().curselect('widget').addClass('cs_select_short_btn');
+    $( ".curselect" ).curselect({
+    	change: function( event, ui ) {
+    		console.log('SELECT CHANGED '+ui.item.value);
+    	}
+    }).curselect('widget').addClass('cs_select_short_btn');
 
 
     $('.bank_address_units').jScrollPane();
@@ -129,6 +146,10 @@ $(function(){
     	$(this).width(parseInt($(this).parents('.rate').width()/5*parseFloat($(this).text())/cf)+'px');
     })
 
+    function numberWithSpaces(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
+
 
 	/*** PRICE SELECTION  ***/
       $( ".sum_selection" ).each(function(){
@@ -137,12 +158,14 @@ $(function(){
           min: $(this).data('min'),
           max: $(this).data('max'),
           value: $(this).data('min'),
+          step: parseInt($(this).data('max'))/10,
           slide: function( event, ui ) {
-              $(this).parents('.sum_ammount_select').find('input[type="text"]').val(ui.value);
+              $(this).parents('.sum_ammount_select').find('input[type="text"]').val(numberWithSpaces(ui.value));
+              console.log('SUM CHANGED')
           },
 		    create: function(event, ui){
-
 		        $(this).slider('value',parseInt($(this).parents('.sum_ammount_select').find('input[type="text"]').val()));
+		        $(this).parents('.sum_ammount_select').find('input[type="text"]').val(numberWithSpaces($(this).parents('.sum_ammount_select').find('input[type="text"]').val()));
 		    }
         });
       })
