@@ -362,19 +362,19 @@
                                         </table>
                                     </section>
                                 </div>
-                                <form action="" class="filter_form tabs">
+                                <form action="" class="filter_form tabs mob_hide">
                                     <header class="filter_form_head clearfix">
                                         <div class="h2">Калькулятор</div>
                                         <div class="currency_select currency_select_flat tabs_controls">
-                                               <div class="currency_var cC checked"><input type="radio" name="sheme_01" checked=""><span>Расходы</span></div><!--
-                                            --><div class="currency_var cC"><input type="radio" name="sheme_01"><span>Снятие наличных</span></div><!--
-                                            --><div class="currency_var cC"><input type="radio" name="sheme_01"><span>Штрафы, комиссии</span></div>
+                                               <div class="currency_var"><span>Расходы</span></div><!--
+                                            --><div class="currency_var"><span>Снятие наличных</span></div><!--
+                                            --><div class="currency_var"><span>Штрафы, комиссии</span></div>
                                         </div>
                                     </header>
                                     <div class="tab_content">
                                         <div class="filter_form_in testimonial_form tab">
                                             <div class="additional_form_row">
-                                                <div class="additional_form_slider_complex">
+                                                <div class="additional_form_slider_complex sum_ammount_select">
                                                     <div class="label">Средний остаток задолженности на карте</div>
                                                     <div class="slider">
                                                         <div class="sum_selection mob_hide" data-min="100000" data-max="500000"></div>
@@ -390,14 +390,14 @@
                                                     </div>
                                                     <div class="input">
                                                         <div class="currency_input">
-                                                            <input type="text" class="input_text wide">
+                                                            <input type="text" class="input_text wide" value="100 000">
                                                             <span>Р</span>
                                                         </div>                                                        
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="additional_form_row">
-                                                <div class="additional_form_slider_complex">
+                                                <div class="additional_form_slider_complex sum_ammount_select">
                                                     <div class="label">Деньги снимаемые в банкоматах за месяц</div>
                                                     <div class="slider">
                                                         <div class="sum_selection mob_hide" data-min="100000" data-max="500000"></div>
@@ -413,7 +413,7 @@
                                                     </div>
                                                     <div class="input">
                                                         <div class="currency_input">
-                                                            <input type="text" class="input_text wide">
+                                                            <input type="text" class="input_text wide" value="100 000">
                                                             <span>Р</span>
                                                         </div>                                                        
                                                     </div>
@@ -468,9 +468,9 @@
                                                                                                        <div class="sum_complex">
                                                         <div class="sum_complex_1"><input type="text" class="input_text"></div>
                                                         <div class="sum_complex_2"><div class="currency_select currency_select_flat">
-                                                               <div class="currency_var cC"><input type="radio" name="sheme_01" checked><span>Р</span></div><!--
-                                                            --><div class="currency_var cC"><input type="radio" name="sheme_01"><span>$</span></div><!--
-                                                            --><div class="currency_var cC"><input type="radio" name="sheme_01"><span>€</span></div>
+                                                               <div class="currency_var cC"><input type="radio" name="sheme_02" checked><span>Р</span></div><!--
+                                                            --><div class="currency_var cC"><input type="radio" name="sheme_02"><span>$</span></div><!--
+                                                            --><div class="currency_var cC"><input type="radio" name="sheme_02"><span>€</span></div>
                                                         </div></div>
                                                     </div>
                                                 </div>
@@ -510,63 +510,74 @@
                                         </div>
                                     </div>
                                 </form>
-                                <div class="article">
+                                <div class="article mob_hide">
                                     <div class="h2_alt">28 отделений в Санкт-Петербурге</div>
-                                    <div class="tabs_row">
-                                        <a href="" class="active">Отделения</a>
+                                    <div class="tabs_controls tabs_row" data-src="address_tabs">
+                                        <a href="" class="on">Отделения</a>
                                         <a href="">Банкоматы</a>
                                         <a href="">POST-терминалы</a>
                                     </div>
                                 </div>
-                                <div class="bank_address_complex">
-                                    <div class="bank_address_addresses">
-                                         <div class="bank_address_units">
-                                           <div class="bank_address_unit">
-                                                <div class="line_1"><a href="">Ул. Международная 112</a></div>
-                                                <div class="line_2">
-                                                    <span class="phone">8 960 2435301</span>
-                                                    <span class="hours">Сегодня 12:00-23:00</span>
+                                    <div id="address_tabs"> 
+                                        <div class="tab">
+                                    <div class="bank_address_complex">
+                                        <div class="bank_address_addresses">
+                                             <div class="bank_address_units">
+                                               <div class="bank_address_unit">
+                                                    <div class="line_1"><a href="">Ул. Международная 112</a></div>
+                                                    <div class="line_2">
+                                                        <span class="phone">8 960 2435301</span>
+                                                        <span class="hours">Сегодня 12:00-23:00</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                           <div class="bank_address_unit">
-                                                <div class="line_1"><a href="">Ул. Международная 112</a></div>
-                                                <div class="line_2">
-                                                    <span class="phone">8 960 2435301</span>
-                                                    <span class="hours">Сегодня 12:00-23:00</span>
+                                               <div class="bank_address_unit">
+                                                    <div class="line_1"><a href="">Ул. Международная 112</a></div>
+                                                    <div class="line_2">
+                                                        <span class="phone">8 960 2435301</span>
+                                                        <span class="hours">Сегодня 12:00-23:00</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                           <div class="bank_address_unit">
-                                                <div class="line_1"><a href="">Ул. Международная 112</a></div>
-                                                <div class="line_2">
-                                                    <span class="phone">8 960 2435301</span>
-                                                    <span class="hours">Сегодня 12:00-23:00</span>
+                                               <div class="bank_address_unit">
+                                                    <div class="line_1"><a href="">Ул. Международная 112</a></div>
+                                                    <div class="line_2">
+                                                        <span class="phone">8 960 2435301</span>
+                                                        <span class="hours">Сегодня 12:00-23:00</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                           <div class="bank_address_unit current">
-                                                <div class="line_1"><a href="">Ул. Международная 112</a></div>
-                                                <div class="line_2">
-                                                    <span class="phone">8 960 2435301</span>
-                                                    <span class="hours">Сегодня 12:00-23:00</span>
+                                               <div class="bank_address_unit current">
+                                                    <div class="line_1"><a href="">Ул. Международная 112</a></div>
+                                                    <div class="line_2">
+                                                        <span class="phone">8 960 2435301</span>
+                                                        <span class="hours">Сегодня 12:00-23:00</span>
+                                                    </div>
+                                                    <div class="line_3">
+                                                        Самые большие скидки оптовикам
+                                                    </div>
                                                 </div>
-                                                <div class="line_3">
-                                                    Самые большие скидки оптовикам
+                                               <div class="bank_address_unit">
+                                                    <div class="line_1"><a href="">Ул. Международная 112</a></div>
+                                                    <div class="line_2">
+                                                        <span class="phone">8 960 2435301</span>
+                                                        <span class="hours">Сегодня 12:00-23:00</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                           <div class="bank_address_unit">
-                                                <div class="line_1"><a href="">Ул. Международная 112</a></div>
-                                                <div class="line_2">
-                                                    <span class="phone">8 960 2435301</span>
-                                                    <span class="hours">Сегодня 12:00-23:00</span>
-                                                </div>
-                                            </div>
-                                         </div>
-                                         <div class="address_units_hint">
-                                             <i class="icn icn_mousehint"></i>
-                                             Пролистывайте адреса колесом мыши
-                                         </div>
+                                             </div>
+                                             <div class="address_units_hint">
+                                                 <i class="icn icn_mousehint"></i>
+                                                 Пролистывайте адреса колесом мыши
+                                             </div>
+                                        </div>
+                                        <div class="bank_address_on_map">
+                                            <div id="map_01" class="map"></div>
+                                        </div>
                                     </div>
-                                    <div class="bank_address_on_map">
-                                        <div id="map_01" class="map"></div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="subsection_h">вторая вкладка</div>
+                                        
+                                    </div>
+                                    <div class="tab">
+                                        <div class="subsection_h">третья вкладка</div>
                                     </div>
                                 </div>
                             </div>
@@ -632,7 +643,7 @@
                                         <a href=""><img src="images/_temp/side_banner.jpg" alt=""></a>
                                     </div>
                                 </div>
-                                <div class="aside_box aside_box_padded aside_rates">
+                                <div class="aside_box aside_box_padded aside_rates mob_hide">
                                     <div class="aside_box_in">
                                         <div class="rates_unit">
                                             <div class="h6">Рейтинг пользователей</div>
@@ -664,7 +675,7 @@
                                         </footer>
                                     </div>
                                 </div>
-                                <div class="aside_box aside_box_padded">
+                                <div class="aside_box aside_box_padded mob_hide">
                                     <div class="aside_box_in">
                                         <div class="h3">Продукты банка</div>
                                         <ul class="bank_products_list">

@@ -14,7 +14,7 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-		<div class="page_container">
+		<div class="page_container index_page">
 			<div class="page_container_in">
                 <header class="page_header">
                     <div class="page_header_in clearfix">
@@ -245,11 +245,14 @@
                 <div class="page_main">
 					<section class="page_section bg_white">
 						<div class="index_cubes">
-							<div class="index_cube index_cube_x2 introduction_cube">
-								<div class="greetings_text">
-									<div class="h3 greetings_h">Привет, я Вазовски!</div>
-									<p>Я хорошо разбираюсь в банковских услугах и помогу вам сориентироваться в мире финансовых продуктов пока рисуют пчелу</p>
-								</div>
+							<div class="index_cube index_cube_x2 introduction_cube tab_hide">
+                                <!-- добавлен один блок в верстку подсказки от чудика -->
+                                <div class="greetings_text_wrap">
+    								<div class="greetings_text">
+    									<div class="h3 greetings_h">Привет, я Вазовски!</div>
+    									<p>Я хорошо разбираюсь в банковских услугах и помогу вам сориентироваться в мире финансовых продуктов пока рисуют пчелу</p>
+    								</div>
+                                </div>
 								<div class="greetings_guy">
 									<img src="images/advisor_small.png" alt="">
 								</div>
@@ -312,19 +315,22 @@
 										<input type="text">
 										<input type="submit" class="icn index_cube_search_btn" value="">
 									</form>
-								</div>
-							</div>
-							<div class="index_cube index_cube_bg_6">
-								<div class="index_navi_cube">
-									<div class="index_navi_img">
-										<img src="images/index_cat_time.png" alt="">
-									</div>
-									<div class="h3"><a href="">Микрозаймы</a></div>
+                                    <!-- добавлена фраза -->
+                                    <p class="show_wide">Популярные и не очень банки России</p>
+                                </div>
+                            </div>
+                            <div class="index_cube index_cube_bg_6">
+                                <div class="index_navi_cube">
+                                    <div class="index_navi_img">
+                                        <img src="images/index_cat_time.png" alt="">
+                                    </div>
+                                    <div class="h3"><a href="">Микрозаймы</a></div>
 									<p>Когда надо взаймы на короткий срок</p>
 								</div>
 							</div>
 							<div class="index_cube index_cube_x3">
-								<div class="h2 index_h2">Курсы валют на 23 декабря</div>
+								<div class="h2 index_h2">Курсы валют <span>на 23 декабря</span></div>
+                                <!-- добавлено два графика для широко экрана -->
 								<div class="index_graphs">
 									<div class="graph_cube">
 										<div class="graph_cube_img">
@@ -350,6 +356,30 @@
 											<strong>280<span>.74</span></strong>
 										</div>
 									</div>
+                                    <div class="graph_cube">
+                                        <div class="graph_cube_img">
+                                            <img src="images/_temp/index_curve.png" alt="">
+                                        </div>
+                                        <div class="graph_cube_stats">
+                                            <small>
+                                                <em>RUB</em>
+                                                <span class="negative">+2.11</span>
+                                            </small>
+                                            <strong>280<span>.74</span></strong>
+                                        </div>
+                                    </div>
+                                    <div class="graph_cube">
+                                        <div class="graph_cube_img">
+                                            <img src="images/_temp/index_curve.png" alt="">
+                                        </div>
+                                        <div class="graph_cube_stats">
+                                            <small>
+                                                <em>RUB</em>
+                                                <span class="negative">+2.11</span>
+                                            </small>
+                                            <strong>280<span>.74</span></strong>
+                                        </div>
+                                    </div>
 									<div class="graph_cube">
 										<div class="graph_cube_img">
 											<img src="images/_temp/index_curve.png" alt="">
@@ -369,16 +399,16 @@
 									<span class="fix_2">
 										<span class="fix_3">
 											<i class="icn icn_currency"></i>
-											<span>Подобрать лучший курс в Санкт-Петербурге</span>
+                                            <span>Подобрать лучший курс обмена валют</span>
 										</span>
 									</span>
 								</span>
 							</a>
 						</div>
 					</section>
-					<section class="page_section bg_white">
+					<section class="page_section bg_white mob_hide">
 						<div class="page_section_h clearfix">
-							<div class="h2 index_h2">Рейтинг российских банков</div>
+							<div class="h2 index_h2">Рейтинг банков</div>
 							<ul class="output_filter">
                                 <li><a href="" class="link_local selected"><span>По вкладам</span></a></li>
                                 <li><a href="" class="link_local"><span>По активам</span></a></li>
@@ -387,6 +417,16 @@
 						</div>
 						<div class="index_rates_box">
 							<ul class="pedestal_complex">
+                                <!-- добавлены несколько ступеней пъедестала для широкого экрана -->
+                                <li class="pedestal_item pedestal_item_5">
+                                    <div class="pedestal_txt">
+                                        <div class="pedestal_number"><span>6</span></div>
+                                        <div class="pedestal_hover">
+                                            <div class="pedestal_hover_txt"><span>Рейтинг <b>658</b></span> <a href="">445 отзывов</a></div>
+                                        </div>
+                                        <div class="pedestal_img"><img src="images/_temp/index_rate_01.png" alt=""></div>
+                                    </div>
+                                </li>
 								<li class="pedestal_item pedestal_item_5">
 									<div class="pedestal_txt">
 										<div class="pedestal_number"><span>5</span></div>
@@ -432,8 +472,26 @@
 										<div class="pedestal_img"><img src="images/_temp/index_rate_05.png" alt=""></div>
 									</div>
 								</li>
+                                <li class="pedestal_item pedestal_item_5">
+                                    <div class="pedestal_txt">
+                                        <div class="pedestal_number"><span>7</span></div>
+                                        <div class="pedestal_hover">
+                                            <div class="pedestal_hover_txt"><span>Рейтинг <b>658</b></span> <a href="">445 отзывов</a></div>
+                                        </div>
+                                        <div class="pedestal_img"><img src="images/_temp/index_rate_01.png" alt=""></div>
+                                    </div>
+                                </li>
+                                <li class="pedestal_item pedestal_item_5">
+                                    <div class="pedestal_txt">
+                                        <div class="pedestal_number"><span>8</span></div>
+                                        <div class="pedestal_hover">
+                                            <div class="pedestal_hover_txt"><span>Рейтинг <b>658</b></span> <a href="">445 отзывов</a></div>
+                                        </div>
+                                        <div class="pedestal_img"><img src="images/_temp/index_rate_01.png" alt=""></div>
+                                    </div>
+                                </li>
 							</ul>
-							<div class="rates_link_place">
+							<div class="rates_link_place tab_hide">
 								<div class="rates_more_link"><a href=""><div><i class="icn icn_more_big"></i><span>Подробный рейтинг</span></div></a></div>
 							</div>
 						</div>
@@ -444,30 +502,67 @@
                             	<div class="section_in">
 	                            	<div class="h2">Новости мира финансов</div>
 	                            	<ul class="news_cards">
-		                                <li class="news_card shd">
+                                        <!-- небольшие изменения в верстке карточки новости + дополнительные новостя -->
+                                        <li class="news_card"><div class="news_card_in  shd">
+                                            <div class="date">23 янв, 18:05</div>
+                                            <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
+                                        </div></li>
+                                        <li class="news_card"><div class="news_card_in  shd">
+                                            <div class="date">23 янв, 18:05</div>
+                                            <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
+                                        </div></li>
+                                        <li class="news_card"><div class="news_card_in  shd">
+                                            <div class="date">23 янв, 18:05</div>
+                                            <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
+                                        </div></li>
+                                        <li class="news_card"><div class="news_card_in  shd">
+                                            <div class="date">23 янв, 18:05</div>
+                                            <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
+                                        </div></li>
+                                        <li class="news_card"><div class="news_card_in  shd">
+                                            <div class="date">23 янв, 18:05</div>
+                                            <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
+                                        </div></li>
+                                        <li class="news_card"><div class="news_card_in  shd">
+                                            <div class="date">23 янв, 18:05</div>
+                                            <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
+                                        </div></li>
+		                                <li class="news_card"><div class="news_card_in  shd">
 		                                    <div class="date">23 янв, 18:05</div>
 		                                    <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
-		                                </li>
-		                                <li class="news_card shd">
+		                                </div></li>
+		                                <li class="news_card"><div class="news_card_in  shd">
 		                                    <div class="date">23 янв, 18:05</div>
 		                                    <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
-		                                </li>
-		                                <li class="news_card shd">
+		                                </div></li>
+		                                <li class="news_card"><div class="news_card_in  shd">
 		                                    <div class="date">23 янв, 18:05</div>
 		                                    <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
-		                                </li>
-		                                <li class="news_card shd">
+		                                </div></li>
+                                        <li class="news_card"><div class="news_card_in  shd">
+                                            <div class="date">23 янв, 18:05</div>
+                                            <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
+                                        </div></li>
+                                        <li class="news_card"><div class="news_card_in  shd">
+                                            <div class="date">23 янв, 18:05</div>
+                                            <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
+                                        </div></li>
+                                        <li class="news_card"><div class="news_card_in  shd">
+                                            <div class="date">23 янв, 18:05</div>
+                                            <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
+                                        </div></li>
+		                                <li class="news_card"><div class="news_card_in  shd">
 		                                    <div class="date">23 янв, 18:05</div>
 		                                    <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
-		                                </li>
-		                                <li class="news_card shd">
+		                                </div></li>
+		                                <li class="news_card"><div class="news_card_in  shd">
 		                                    <div class="date">23 янв, 18:05</div>
 		                                    <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
-		                                </li>
-		                                <li class="news_card shd">
+		                                </div></li>
+		                                <li class="news_card"><div class="news_card_in  shd">
 		                                    <div class="date">23 янв, 18:05</div>
 		                                    <div class="h6"><a href="">Ходорковский заочно арестован и объявлен в международный розыск</a></div>
-		                                </li>
+		                                </div></li>
 		                            </ul>
 		                        </div>
 		                        <a href="" class="btn btn_flat btn_blue btn_ajax wide">Показать все новости</a>
@@ -498,7 +593,7 @@
                             </div>
                         </div>
                     </section>
-                    <footer class="page_section page_footer mob_hide bg_white">
+                    <footer class="page_section page_footer tab_hide bg_white">
                         <div class="page_section_in">
                             <ul class="page_footer_navigation">
                                 <li>
