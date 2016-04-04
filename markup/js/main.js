@@ -183,7 +183,10 @@ $(function(){
 
 
 
-    $('.bank_address_units').jScrollPane();
+    if(!if_mobile()){
+      $('.bank_address_units').jScrollPane();
+    }
+
     $('.output_scrl').jScrollPane();
 
     $('.rated').each(function(){
