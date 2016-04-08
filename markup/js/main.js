@@ -43,6 +43,22 @@ $(function(){
     })
 
 
+    function voteCount(x){
+      x.css("width",(parseInt(x.text()))+'%');
+    }
+
+    $('.vote_progress span').each(function(){
+      voteCount($(this));
+    })
+
+    $('.vote_module .q .btn').click(function(e){
+      e.preventDefault();
+      $(this).parents('.q').slideUp().siblings('.results').slideDown();
+    })
+
+
+
+
     if(if_tab()){
 	    $('.aside_testimonial_list').each(function(){
 	        var $this = $(this);
