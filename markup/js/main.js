@@ -37,10 +37,6 @@ $(function(){
     	console.log('SOME AJAX EVENT');
     })
 
-    $('.btn_ajax').click(function(e){
-    	e.preventDefault();
-    	console.log('SOME AJAX EVENT');
-    })
 
 
     function voteCount(x){
@@ -132,7 +128,16 @@ $(function(){
 	/*** MISC ACCORDION ***/
       $('.acc_h').click(function(e){
       	e.preventDefault();
-      	$(this).parents('.acc').toggleClass('opened').find('.acc_c').slideToggle();
+      	$(this).parents('.acc').toggleClass('opened').find('.acc_c').slideToggle(
+          function(){
+            if($(this).parents('.acc').hasClass('opened') && $(this).parents('.acc').find('.filter_tip').length){
+              $(this).parents('.acc').find('.acc_c').css('min-height','170px');
+            }
+            else{
+             $(this).parents('.acc').find('.acc_c').css('min-height','none'); 
+            }
+          }
+        );
       })
 
       $('.acc_h a').click(function(e){
@@ -169,8 +174,8 @@ $(function(){
 	$('[data-navi-type]').click(function(e){
 		e.stopPropagation();
 	})
-	$('html').click(function(e){
-		e.preventDefault()
+	$('html').click(function(){
+		//e.preventDefault()
 		if($(this).hasClass('navicalled')){
 			$('[data-navi-type]').slideUp();
 			$('html').removeClass('navicalled')	
@@ -202,6 +207,9 @@ $(function(){
     if(!if_mobile()){
       $('.bank_address_units').jScrollPane();
     }
+    $('.bank_address_unit').click(function(){
+      $(this).addClass('current').siblings().removeClass('current')
+    });
 
     $('.output_scrl').jScrollPane();
 
@@ -289,7 +297,38 @@ $(function(){
       })
 
 
+      $('.testimonial_marked').click(function(e){
+        e.preventDefault();
+        $(this).parents('.news_testimonial').toggleClass('flagged')
+      })
 
+
+
+      $("[data-action='loadMore']").click(function(e){
+        e.preventDefault();
+        $(this).addClass('processing')
+      })
+
+
+      $('.address_tr').parents('tr').prev('tr').click(function(e){
+        e.preventDefault();
+        $(this).find('th').width($(this).find('th').width()+10);
+        $(this).next('tr').find('.bank_address_toggle').toggleClass('v').slideToggle(function(){
+          if($(this).hasClass("v")){
+            //.container.fitToViewport()
+            //$(this).css('display','table');
+            if(!if_mobile()){
+              $('.bank_address_units').jScrollPane();
+              var pane=$(this).find($('.bank_address_units'));
+              pane.css('height',pane.parents('.bank_address_addresses').height()-pane.siblings('.address_units_hint').height())
+              var api = pane.data('jsp');
+              api.reinitialise();
+            }
+            //$(this).parents('tr').prev('tr').find('th').css('width','');
+
+          }
+        });
+      })
 
 
 jpg_compare();

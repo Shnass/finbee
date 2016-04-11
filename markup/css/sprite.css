@@ -8,7 +8,7 @@
 .offer_details_list li:before,
 .simple_cb:before,
 .bank_card_phone .number:before,
-.location_select .link_local_alt:after,
+.location_select:after,
 .bank_address_unit .hours:before,
 .document_list li:before,
 .benefits_list li:before
@@ -20,7 +20,7 @@
 .page_header_location_actual:after,
 .simple_cb:before,
 .bank_card_phone .number:before,
-.location_select .link_local_alt:after,
+.location_select:after,
 .bank_address_unit .hours:before,
 .document_list li:before,
 .benefits_list li:before
@@ -123,8 +123,8 @@ a:hover .icn_reload{background-position: 0 -1449px;}
 .icn_tell{width: 16px;height: 14px;background-position: -13px -1467px;}
 .icn_gear{width: 22px;height: 22px;background-position: 0 -1483px;}
 
-.location_select .link_local_alt:after{width: 9px;height: 6px;background-position: 0 -1505px;top: 0;bottom: 0;margin: auto;right: -12px;}
-.location_select .link_local_alt:hover:after{background-position: -9px -1505px;}
+.location_select:after{width: 9px;height: 6px;background-position: 0 -1505px;top: 0;bottom: 0;margin: auto;right: -15px;}
+.location_select:hover:after{background-position: -9px -1505px;}
 .icn_mousehint { background-position: -0px -944px; width: 21px; height: 32px; }
 
 .not_fresh .icn_reload{background-position: 0 -1511px;}
