@@ -331,6 +331,14 @@ $(function(){
       })
 
 
+      $('[data-mode-switch]').click(function(e){
+        e.preventDefault();
+        $('[data-mode-content]').removeClass('on');
+        $('[data-mode-content="'+$(this).attr("data-mode-switch")+'"]').addClass('on')
+      })
+
+
+
 jpg_compare();
 
 

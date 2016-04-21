@@ -351,7 +351,7 @@
                                        </table>
                                     </section>
                                  </div>
-                                 <form action="" class="filter_form tabs">
+                                 <div class="filter_form tabs">
                                     <header class="filter_form_head clearfix">
                                        <div class="h2">Калькулятор</div>
                                        <div class="currency_select currency_select_flat tabs_controls">
@@ -362,182 +362,186 @@
                                        </div>
                                     </header>
                                     <div class="tab_content">
-                                       <div class="filter_form_in testimonial_form tab">
-                                          <div class="additional_form_row">
-                                             <div class="additional_form_cell cell_1">
-                                                <label for="" class="label_h">Сумма депозита</label>
-                                                <div class="sum_complex">
-                                                   <div class="sum_complex_1"><input type="text" class="input_text"></div>
-                                                   <div class="sum_complex_2">
-                                                      <div class="currency_select currency_select_flat">
-                                                         <div class="currency_var cC"><input type="radio" name="sheme_01" checked><span>Р</span></div>
-                                                         <!--
-                                                            -->
-                                                         <div class="currency_var cC"><input type="radio" name="sheme_01"><span>$</span></div>
-                                                         <!--
-                                                            -->
-                                                         <div class="currency_var cC"><input type="radio" name="sheme_01"><span>€</span></div>
+                                          <div class="filter_form_in testimonial_form tab">
+                                          <form action="">
+                                             <div class="additional_form_row">
+                                                <div class="additional_form_cell cell_1">
+                                                   <label for="" class="label_h">Сумма депозита</label>
+                                                   <div class="sum_complex">
+                                                      <div class="sum_complex_1"><input type="text" class="input_text"></div>
+                                                      <div class="sum_complex_2">
+                                                         <div class="currency_select currency_select_flat">
+                                                            <div class="currency_var cC"><input type="radio" name="sheme_01" checked><span>Р</span></div>
+                                                            <!--
+                                                               -->
+                                                            <div class="currency_var cC"><input type="radio" name="sheme_01"><span>$</span></div>
+                                                            <!--
+                                                               -->
+                                                            <div class="currency_var cC"><input type="radio" name="sheme_01"><span>€</span></div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="additional_form_cell cell_12">
+                                                   <label for="" class="label_h">Срок депозита</label>
+                                                   <select name="" id="" class="curselect curselect_small">
+                                                      <option value="">Без поручителя</option>
+                                                      <option value="">Без поручителя</option>
+                                                      <option value="">Без поручителя</option>
+                                                      <option value="">Без поручителя</option>
+                                                      <option value="">Без поручителя</option>
+                                                      <option value="">Без поручителя</option>
+                                                   </select>
+                                                </div>
+                                                <div class="additional_form_cell cell_2">
+                                                   <label for="" class="label_h">Сумма и частота пополнения</label>
+                                                   <div class="sum_complex">
+                                                      <div class="sum_complex_1"><input type="text" class="input_text"></div>
+                                                      <div class="sum_complex_2">
+                                                         <select name="" id="" class="curselect curselect_small">
+                                                            <option value="">Постоянная</option>
+                                                            <option value="">Постоянная</option>
+                                                            <option value="">Постоянная</option>
+                                                            <option value="">Постоянная</option>
+                                                            <option value="">Постоянная</option>
+                                                            <option value="">Постоянная</option>
+                                                         </select>
                                                       </div>
                                                    </div>
                                                 </div>
                                              </div>
-                                             <div class="additional_form_cell cell_12">
-                                                <label for="" class="label_h">Срок депозита</label>
-                                                <select name="" id="" class="curselect curselect_small">
-                                                   <option value="">Без поручителя</option>
-                                                   <option value="">Без поручителя</option>
-                                                   <option value="">Без поручителя</option>
-                                                   <option value="">Без поручителя</option>
-                                                   <option value="">Без поручителя</option>
-                                                   <option value="">Без поручителя</option>
-                                                </select>
+                                             <div class="filter_row">
+                                                <button class="btn btn_silver btn_high wide">Рассчитать график выплат</button>
                                              </div>
-                                             <div class="additional_form_cell cell_2">
-                                                <label for="" class="label_h">Сумма и частота пополнения</label>
-                                                <div class="sum_complex">
-                                                   <div class="sum_complex_1"><input type="text" class="input_text"></div>
-                                                   <div class="sum_complex_2">
-                                                      <select name="" id="" class="curselect curselect_small">
-                                                         <option value="">Постоянная</option>
-                                                         <option value="">Постоянная</option>
-                                                         <option value="">Постоянная</option>
-                                                         <option value="">Постоянная</option>
-                                                         <option value="">Постоянная</option>
-                                                         <option value="">Постоянная</option>
-                                                      </select>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="filter_row">
-                                             <button class="btn btn_silver btn_high wide">Рассчитать график выплат</button>
-                                          </div>
-                                          <div class="filter_row">
-                                             <div class="form_results_output">
-                                                <div class="in">
-                                                   <div class="form_results_brief">
-                                                      <div class="stat">
-                                                         <b>Переплата</b>
-                                                         <span>26 370 Т</span>
-                                                      </div><!--
-                                                         --><div class="stat">
-                                                         <b>Ставка</b>
-                                                         <span>5.30%</span>
-                                                      </div><!--
-                                                         --><div class="stat">
-                                                         <b>Комиссия</b>
-                                                         <span>2 500 Т</span>
-                                                      </div><!--
-                                                         --><div class="stat">
-                                                         <b>Сумма возврата</b>
-                                                         <span>316 250 Т</span>
+                                             <div class="filter_row">
+                                                <div class="form_results_output">
+                                                   <div class="in">
+                                                      <div class="form_results_brief">
+                                                         <div class="stat">
+                                                            <b>Переплата</b>
+                                                            <span>26 370 Т</span>
+                                                         </div><!--
+                                                            --><div class="stat">
+                                                            <b>Ставка</b>
+                                                            <span>5.30%</span>
+                                                         </div><!--
+                                                            --><div class="stat">
+                                                            <b>Комиссия</b>
+                                                            <span>2 500 Т</span>
+                                                         </div><!--
+                                                            --><div class="stat">
+                                                            <b>Сумма возврата</b>
+                                                            <span>316 250 Т</span>
+                                                         </div>
                                                       </div>
-                                                   </div>
-                                                   <div class="output_scrl">
-                                                      <table class="output_table">
-                                                         <thead>
-                                                            <tr>
-                                                               <th>Остаток<br/> задолженности</th>
-                                                               <th>Начисленные<br/> проценты</th>
-                                                               <th>Начисленные<br/> проценты</th>
-                                                               <th>Плановый<br/> платеж</th>
-                                                               <th>Сумма<br/> платежа</th>
-                                                            </tr>
-                                                         </thead>
-                                                         <tbody>
-                                                            <tr>
-                                                               <td>30.11.2015</td>
-                                                               <td>500 000 Р</td>
-                                                               <td>6 834 Р</td>
-                                                               <td>20 349 Р</td>
-                                                               <td>23 545 Р</td>
-                                                            </tr>
-                                                            <tr>
-                                                               <td>30.11.2015</td>
-                                                               <td>500 000 Р</td>
-                                                               <td>6 834 Р</td>
-                                                               <td>20 349 Р</td>
-                                                               <td>23 545 Р</td>
-                                                            </tr>
-                                                            <tr>
-                                                               <td>30.11.2015</td>
-                                                               <td>500 000 Р</td>
-                                                               <td>6 834 Р</td>
-                                                               <td>20 349 Р</td>
-                                                               <td>23 545 Р</td>
-                                                            </tr>
-                                                            <tr>
-                                                               <td>30.11.2015</td>
-                                                               <td>500 000 Р</td>
-                                                               <td>6 834 Р</td>
-                                                               <td>20 349 Р</td>
-                                                               <td>23 545 Р</td>
-                                                            </tr>
-                                                            <tr class="summary">
-                                                               <td>Итого:</td>
-                                                               <td>500 000 Р</td>
-                                                               <td>6 834 Р</td>
-                                                               <td>20 349 Р</td>
-                                                               <td>23 545 Р</td>
-                                                            </tr>
-                                                         </tbody>
-                                                      </table>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="filter_form_in testimonial_form tab">
-                                          <div class="additional_form_row additional_form_row_short">
-                                             <div class="additional_form_cell cell_1">
-                                                <label for="" class="label_h">Сумма кредита</label>
-                                                <div class="sum_complex">
-                                                   <div class="sum_complex_1"><input type="text" class="input_text"></div>
-                                                   <div class="sum_complex_2">
-                                                      <div class="currency_select currency_select_flat">
-                                                         <div class="currency_var cC"><input type="radio" name="sheme_02" checked><span>Р</span></div>
-                                                         <!--
-                                                            -->
-                                                         <div class="currency_var cC"><input type="radio" name="sheme_02"><span>$</span></div>
-                                                         <!--
-                                                            -->
-                                                         <div class="currency_var cC"><input type="radio" name="sheme_02"><span>€</span></div>
+                                                      <div class="output_scrl">
+                                                         <table class="output_table">
+                                                            <thead>
+                                                               <tr>
+                                                                  <th>Остаток<br/> задолженности</th>
+                                                                  <th>Начисленные<br/> проценты</th>
+                                                                  <th>Начисленные<br/> проценты</th>
+                                                                  <th>Плановый<br/> платеж</th>
+                                                                  <th>Сумма<br/> платежа</th>
+                                                               </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td>30.11.2015</td>
+                                                                  <td>500 000 Р</td>
+                                                                  <td>6 834 Р</td>
+                                                                  <td>20 349 Р</td>
+                                                                  <td>23 545 Р</td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td>30.11.2015</td>
+                                                                  <td>500 000 Р</td>
+                                                                  <td>6 834 Р</td>
+                                                                  <td>20 349 Р</td>
+                                                                  <td>23 545 Р</td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td>30.11.2015</td>
+                                                                  <td>500 000 Р</td>
+                                                                  <td>6 834 Р</td>
+                                                                  <td>20 349 Р</td>
+                                                                  <td>23 545 Р</td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <td>30.11.2015</td>
+                                                                  <td>500 000 Р</td>
+                                                                  <td>6 834 Р</td>
+                                                                  <td>20 349 Р</td>
+                                                                  <td>23 545 Р</td>
+                                                               </tr>
+                                                               <tr class="summary">
+                                                                  <td>Итого:</td>
+                                                                  <td>500 000 Р</td>
+                                                                  <td>6 834 Р</td>
+                                                                  <td>20 349 Р</td>
+                                                                  <td>23 545 Р</td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
                                                       </div>
                                                    </div>
                                                 </div>
                                              </div>
-                                             <div class="additional_form_cell cell_1">
-                                                <label for="" class="label_h">Срок кредита</label>
-                                                <select name="" id="" class="curselect curselect_small">
-                                                   <option value="">Без поручителя</option>
-                                                   <option value="">Без поручителя</option>
-                                                   <option value="">Без поручителя</option>
-                                                   <option value="">Без поручителя</option>
-                                                   <option value="">Без поручителя</option>
-                                                   <option value="">Без поручителя</option>
-                                                </select>
-                                             </div>
-                                             <div class="additional_form_cell cell_5">
-                                                <label for="" class="label_h">Подтверждение</label>
-                                                <select name="" id="" class="curselect curselect_small">
-                                                   <option value="">Индивидуальный предприниматель</option>
-                                                   <option value="">Индивидуальный предприниматель</option>
-                                                   <option value="">Индивидуальный предприниматель</option>
-                                                   <option value="">Индивидуальный предприниматель</option>
-                                                   <option value="">Индивидуальный предприниматель</option>
-                                                   <option value="">Индивидуальный предприниматель</option>
-                                                </select>
-                                             </div>
-                                             <div class="additional_form_highlight">
-                                                <div class="va_fix">
-                                                   <div class="label">Ваша ставка</div>
-                                                   <b>25.36%</b>
+                                          </form>
+                                          </div>
+                                          <div class="filter_form_in testimonial_form tab">
+                                             <form action="">
+                                             <div class="additional_form_row additional_form_row_short">
+                                                <div class="additional_form_cell cell_1">
+                                                   <label for="" class="label_h">Сумма кредита</label>
+                                                   <div class="sum_complex">
+                                                      <div class="sum_complex_1"><input type="text" class="input_text"></div>
+                                                      <div class="sum_complex_2">
+                                                         <div class="currency_select currency_select_flat">
+                                                            <div class="currency_var cC"><input type="radio" name="sheme_02" checked><span>Р</span></div>
+                                                            <!--
+                                                               -->
+                                                            <div class="currency_var cC"><input type="radio" name="sheme_02"><span>$</span></div>
+                                                            <!--
+                                                               -->
+                                                            <div class="currency_var cC"><input type="radio" name="sheme_02"><span>€</span></div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="additional_form_cell cell_1">
+                                                   <label for="" class="label_h">Срок кредита</label>
+                                                   <select name="" id="" class="curselect curselect_small">
+                                                      <option value="">Без поручителя</option>
+                                                      <option value="">Без поручителя</option>
+                                                      <option value="">Без поручителя</option>
+                                                      <option value="">Без поручителя</option>
+                                                      <option value="">Без поручителя</option>
+                                                      <option value="">Без поручителя</option>
+                                                   </select>
+                                                </div>
+                                                <div class="additional_form_cell cell_5">
+                                                   <label for="" class="label_h">Подтверждение</label>
+                                                   <select name="" id="" class="curselect curselect_small">
+                                                      <option value="">Индивидуальный предприниматель</option>
+                                                      <option value="">Индивидуальный предприниматель</option>
+                                                      <option value="">Индивидуальный предприниматель</option>
+                                                      <option value="">Индивидуальный предприниматель</option>
+                                                      <option value="">Индивидуальный предприниматель</option>
+                                                      <option value="">Индивидуальный предприниматель</option>
+                                                   </select>
+                                                </div>
+                                                <div class="additional_form_highlight">
+                                                   <div class="va_fix">
+                                                      <div class="label">Ваша ставка</div>
+                                                      <b>25.36%</b>
+                                                   </div>
                                                 </div>
                                              </div>
+                                             </form>
                                           </div>
-                                       </div>
                                     </div>
-                                 </form>
+                                 </div>
                                  <div class="article clearfix mob_hide" >
                                     <div class="h2_alt wide_fl">28 отделений в Санкт-Петербурге</div>
                                     <div class="tabs_controls tabs_row wide_fr" data-src="address_tabs">

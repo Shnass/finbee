@@ -245,6 +245,7 @@ max-height: 36px;}
 .sum_complex_1{display: table-cell;vertical-align: top;width: 86px;padding-right: 8px;}
 .sum_complex_2{display: table-cell;vertical-align: top;}
 .cell_12{max-width: 104px;}
+.tab_content .cell_12{max-width:none;}
 .cell_13{max-width: 50px;}
 .currency_input{position: relative;}
 .currency_input input{padding-right: 35px;}
@@ -1051,7 +1052,7 @@ border-radius: 4px;margin: auto;}
 .news_article .h3, .news_article h3{font-weight: bold;}
 .news_article p{margin-bottom: 20px;}
 .lead{font-size: 17px;}
-.news_article_body{padding-bottom: 30px;max-width: 1200px;}
+.news_article_body{padding-bottom: 30px;max-width: 1000px;}
 .meta{}
 .date{}
 .category{}
@@ -1275,6 +1276,27 @@ padding-left: 20px;}
 .submit_place{display: table;width: 100%;}
 .submit_btn{display: table-cell;vertical-align: middle;}
 .submit_comment{display: table-cell;vertical-align: middle;text-align: right;}
+
+
+
+
+/*
+NO RESULTS
+*/
+.no_result_message{text-align: center;padding: 34px 50px;}
+.no_result_icon{width: 104px;height: 104px;background: url(../images/sorry.png);display: inline-block;margin-bottom: 20px;}
+.no_result_txt{color: #242c45;font-size: 19px;}
+
+
+/*
+SWITCH TO MAP MODE
+*/
+.aside_box_course{background-image:url(../images/side_courses.jpg)}
+.icn_go_back{width: 46px;height: 46px;display: inline-block;background:url(../images/go_back.png) left top;}
+a:hover .icn_go_back{background:url(../images/go_back.png) left bottom;}
+*[data-mode-content]:not(.on){display: none !important;}
+
+
 
 /*
 MAP BALOON
@@ -1506,6 +1528,9 @@ input:-moz-placeholder, textarea:-moz-placeholder {}
     .greetings_guy{width: 230px;
     text-align: center;}
 
+    .additional_form_row_short{-ms-align-items: center;
+    -webkit-align-items: center;align-items: center;}
+
 
     .group_at_wide, .additional_form_row, .filter_row{width: auto;}
     .cell_2{-webkit-order: 1;-moz-order: 1;-ms-order: 1;-o-order: 1;order: 1;-webkit-flex:1 ;
@@ -1519,7 +1544,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {}
     -o-flex: 1;
     flex: 1;max-width: 50%;}
     .offer_details_list{list-style-type: none;padding: 0;margin: 0;font-size: 13px;color: #fff;-webkit-columns: 3;-moz-columns: 3;-o-columns: 3;columns: 3;}
-
+    .cell_4{max-width:34.5%;}
     .course_box{max-width: 800px;}
     .course_alt_row{margin-bottom: 0;}
     .course_alt_row .course_row{float: left;width: 48.5%;display: block;}
@@ -2073,6 +2098,7 @@ td .bank_address_complex{height: auto;}
     .cell_12, .cell_13{max-width: none;}
     .sum_complex_1{width: 100%;}
     .sum_complex .currency_select_flat .currency_var{float: none;padding: 0 10px;}
+    .no_result_txt{font-size: 17px;}
 }
 
 
