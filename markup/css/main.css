@@ -642,8 +642,9 @@ box-sizing: border-box;}
 .bank_address_unit .hours{padding-left: 20px;position: relative;color: #939fa5;}
 .address_units_hint{font-size: 11px;color: #939fa5;text-align: center;padding: 20px 0;border-top: 1px solid #e2e6e9;}
 .address_units_hint .icn{display: block;margin: 0 auto 7px;}
-.bank_address_on_map{display: table-cell;}
-.bank_address_on_map .map{height: 100%;width: 100%;}
+.bank_address_on_map{display: table-cell;position: relative;}
+.bank_address_on_map .map{height: 100%;width: 100%;position: absolute;left: 0;
+top: 0;}
 .bank_address_complex .jspVerticalBar{display: none;}
 
 /* map mark */
@@ -971,12 +972,9 @@ box-sizing: border-box;padding-right: 40px;}
 
 /** DINAMICA PAGE **/
 .currency_brief{background: #f6f8fa;padding: 40px 0;margin:0 auto 30px;max-width: 570px;}
-.currency_brief_itm{display: inline-block;width: 33.33334%;
-text-align: center;box-shadow: inset 1px 0 0 0px #e2e7ec}
+.currency_brief_itm{display: inline-block;width: 33.33334%;text-align: center;box-shadow: inset 1px 0 0 0px #e2e7ec}
 .currency_brief_itm:first-child{box-shadow: none}
-.currency_brief_itm b{font-size: 50px;display: block;
-font-family: muller;
-font-weight: 100;}
+.currency_brief_itm b{font-size: 50px;display: block;font-family: muller;font-weight: 100;}
 .currency_brief_itm span{font-size: 15px;}
 
 .dinamica_section{background: #f8fbfd;border-top: 1px solid  #eef2f5;border-bottom: 1px solid  #eef2f5;padding: 20px;}
@@ -1462,7 +1460,6 @@ input:-moz-placeholder, textarea:-moz-placeholder {}
 .filter_form_slim .additional_form_cell .additional_form_cb{margin-bottom: 0;}
 .filter_form_slim .cell_8{margin-bottom: 0;}
 .filter_form_slim .cell_8+.additional_form_cell{margin-bottom: 0;}
-
 }
 
 @media only screen and (min-width: 1900px) {
@@ -1723,11 +1720,8 @@ input:-moz-placeholder, textarea:-moz-placeholder {}
 
 
 
-
-    /*typo*/
+  /*typo*/
     h1, .h1{font-size: 21px;}
-
-
     .page_container{border-left: 0;}
     h5, .h5{font-size: 15px;}
     .news_list_card{padding: 22px;}
@@ -1749,7 +1743,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {}
     .page_navigation_proper{border-bottom: 1px solid  #232b44;width: 100%;background: none;position: relative;}
     .page_navigation_proper>li{width: 100%;height: auto;}
     .page_navigation_proper li{display: block;height: auto;font-size: 17px;font-weight: bold;margin-bottom: 16px;}
-    .page_navigation_proper a{color: #fff;text-decoration: underline;display: block;text-align: left;}
+ -   .page_navigation_proper a{color: #fff;text-decoration: underline;display: block;text-align: left;}
     .page_navigation_proper a:hover{background: none;}
     .page_navigation_proper a.active{background: none;color: #fff;}
     .page_navi_icn{display: none;}
