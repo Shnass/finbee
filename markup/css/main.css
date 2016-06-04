@@ -186,11 +186,23 @@ max-height: 36px;}
 .filter_row:last-child .filter_cell:last-child{margin-bottom: 0;}
 .filter_cell:first-child{}
 .filter_row_fx{display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;display: flex;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;-ms-flex-wrap: wrap;-o-flex-wrap: wrap;flex-wrap: wrap;}
-.filter_row_fx .filter_cell{flex-grow: 1;margin-bottom: 20px;max-width: 60%;}
+.filter_row_fx .filter_cell{  -webkit-box-flex:1;
+  -webkit-flex-grow:1;
+      -ms-flex-positive:1;
+          flex-grow:1;margin-bottom: 20px;   padding-left: 16px;-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;margin-left: 0;}
+.filter_row_fx .filter_cell:last-child{max-width: 66.666%;}
+.filter_row_fx .filter_cell._x2{width: 66.66666%;flex-grow: 0;}
+.filter_row_fx .filter_cell._x100{width: 100%;flex-grow: 0;max-width: 100%;}
+.filter_row_fx .filter_cell.filter_cell_slide{flex-grow: 0;}
 .filter_cell{display: inline-block;vertical-align: top;margin-left: 16px;min-width: 174px;}
 .filter_cell .h5{margin-bottom: 14px;}
 .filter_cell .h5{white-space: nowrap;overflow: hidden;-ms-text-overflow: ellipsis;text-overflow: ellipsis;}
+.filter_small .h5{display: block;width: 100%;color: #fff;font-size: 13px;margin-bottom: 5px;min-height: 18px;}
 .filter_row>.h5,.filter_row>.cb_list_2{margin-left: 16px;}
+label.h5{display: block;}
+
 .filter_form .h5 small{display: block;font-size: 13px;}
 .testimonial_form .filter_row{margin-left: 0;}
 .testimonial_form .filter_row{margin-left: 0;}
@@ -205,6 +217,7 @@ max-height: 36px;}
 .sum_ammount_select{display: inline-block;vertical-align: top;max-width: 250px;}
 .filter_cell_02 .sum_ammount_select{width: 164px;}
 .filter_cell_03 .sum_ammount_select{max-width: 210px;}
+
 .input_text_blue{background: #055ca5;border: 1px solid  #004884;color: #fff;height: 16px;padding: 14px;width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;height: 46px;    box-shadow: inset 0 0 6px rgba(0,0,0,0.2);font-size: 18px;}
 .textarea{height: 140px;resize: none;}
 .sum_selection{}
@@ -380,10 +393,13 @@ width: 100%;}
 .currency_select_flat{margin-left: 0;font-size: 13px;white-space: nowrap;height: 35px;display: table;width: 100%;   }
 .currency_select_flat .currency_var{width: auto;font-size: 13px;height: 35px;line-height: 35px;display: table-cell;padding-left: 10px;  padding-right: 10px;    }
 /*.additional_form_cell+.additional_form_cell{float: right;}*/
-.curselect.curselect_small+.ui-selectmenu-button {height: 35px;border: 0;line-height: 25px;font-size: 14px;position: relative;border-radius: 0;box-shadow: 0 0 0 0;padding: 0 !important;width: 100% !important;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;color: #383838;outline: 0;font-family: roboto;}
-.curselect.curselect_small+.ui-selectmenu-button .ui-selectmenu-text {line-height: 35px;height: 35px;padding: 0 16px 0 10px;color: #fff;font-size: 13px;font-weight: normal;font-family: roboto;}
-.curselect.curselect_small+.ui-selectmenu-button span.ui-icon{right: 7px; }
+.filter_small .curselect+.ui-selectmenu-button, .curselect.curselect_small+.ui-selectmenu-button {height: 35px;border: 0;line-height: 25px;font-size: 14px;position: relative;border-radius: 0;box-shadow: 0 0 0 0;padding: 0 !important;width: 100% !important;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;color: #383838;outline: 0;font-family: roboto;}
+.filter_small .curselect+.ui-selectmenu-button  .ui-selectmenu-text, .curselect.curselect_small+.ui-selectmenu-button .ui-selectmenu-text {line-height: 35px;height: 35px;padding: 0 16px 0 10px;color: #fff;font-size: 13px;font-weight: normal;font-family: roboto;}
+.filter_small .curselect+.ui-selectmenu-button  span.ui-icon, .curselect.curselect_small+.ui-selectmenu-button span.ui-icon{right: 7px; }
+.filter_small .input_text_blue{height: 35px;font-size: 13px;background: #242c45;box-shadow: none;border: 0;}
 .additional_form_row:last-child{margin-bottom: 0;}
+
+
 
 .curselect.curselect_white+.ui-selectmenu-button, .curselect.curselect_white+.ui-selectmenu-button:hover {background: #fff !important   ;color: #000;outline: 0;font-weight: normal;background: #fff;box-shadow: inset 0 0 0 1px #dcdcdc, inset 0 0 3px rgba(0,0,0,0.2)}
 .curselect.curselect_white+.ui-selectmenu-button .ui-selectmenu-text, .curselect.curselect_white+.ui-selectmenu-button:hover .ui-selectmenu-text {color: #000 !important    ;}
@@ -1523,10 +1539,13 @@ input:-moz-placeholder, textarea:-moz-placeholder {}
 }
 @media only screen and (min-width: 1600px) {
 	.cell_13{max-width: none}
-
+    .filter_row_fx .filter_cell:last-child {max-width: 50%;}
+    .filter_row_fx .filter_cell._x2 {width: 50%;}
 }
 
 @media only screen and (min-width: 1400px) {
+    
+
     .refresh_link{color: #9fa9b0;text-decoration: none;}
     .refresh_link:after{content:attr(title);white-space: nowrap;padding-left: 7px;line-height: 20px;position: relative;top: -4px;}
 
@@ -1744,8 +1763,22 @@ input:-moz-placeholder, textarea:-moz-placeholder {}
 
 }
 @media only screen and (max-width: 760px) {
-
-
+    .filter_row_fx .filter_cell,
+    .filter_row_fx .filter_cell._x2,
+    .filter_row_fx .filter_cell:last-child {min-width: 50%;max-width: 100%;}
+    .filter_row_fx .filter_cell:last-child{width: 100%;}
+    .filter_row_fx .filter_cell.filter_cell_slide{min-width: 50%;display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;-webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;}
+    .filter_row_fx .filter_cell.filter_cell_slide .h5{
+        width: 100%;
+    }
 
   /*typo*/
     h1, .h1{font-size: 21px;}
@@ -1815,6 +1848,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {}
   .filter_cell_fx{display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;display: flex;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;-ms-flex-wrap: wrap;-o-flex-wrap: wrap;flex-wrap: wrap;}
   .filter_cell_fx .h5{width: 100%;}
   .filter_cell_fx .sum_ammount_select{max-width: 100%;}
+
   .cb_list_cell{float: none;}
   .cb_list_cell .additional_form_cb{display: inline-block;vertical-align: top;width: 49%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding-right: 0;}
   .faq_item_h{font-size: 15px;padding: 12px 40px 12px 18px;}
