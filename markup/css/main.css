@@ -193,15 +193,41 @@ max-height: 36px;}
 -moz-box-sizing: border-box;
 box-sizing: border-box;margin-left: 0;}
 .filter_row_fx .filter_cell:last-child{max-width: 66.666%;}
-.filter_row_fx .filter_cell._x2{width: 66.66666%;flex-grow: 0;}
-.filter_row_fx .filter_cell._x100{width: 100%;flex-grow: 0;max-width: 100%;}
-.filter_row_fx .filter_cell.filter_cell_slide{flex-grow: 0;}
+.filter_row_fx .filter_cell._x2{width: 66.66666%;  -webkit-box-flex:0;
+  -webkit-flex-grow:0;
+      -ms-flex-positive:0;
+          flex-grow:0;}
+.filter_row_fx .filter_cell._x100{width: 100%;  -webkit-box-flex:0;
+  -webkit-flex-grow:0;
+      -ms-flex-positive:0;
+          flex-grow:0;max-width: 100%;}
+.filter_row_fx .filter_cell.filter_cell_slide{  -webkit-box-flex:0;
+  -webkit-flex-grow:0;
+      -ms-flex-positive:0;
+          flex-grow:0;display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;}
+.filter_row_fx .filter_cell.filter_cell_slide>.filter_cell:first-child{padding-left: 0;-webkit-box-flex:1;
+  -webkit-flex-grow:1;
+      -ms-flex-positive:1;
+          flex-grow:1;display}
+.filter_row_fx .filter_cell.filter_cell_slide>.filter_cell:last-child{-webkit-box-flex:0;
+  -webkit-flex-grow:0;
+      -ms-flex-positive:0;
+          flex-grow:0;min-width: auto;}
+.filter_row_fx .filter_cell.filter_cell_slide>.filter_cell .currency_select{margin-left: 0;}
 .filter_cell{display: inline-block;vertical-align: top;margin-left: 16px;min-width: 174px;}
 .filter_cell .h5{margin-bottom: 14px;}
-.filter_cell .h5{white-space: nowrap;overflow: hidden;-ms-text-overflow: ellipsis;text-overflow: ellipsis;}
+.filter_cell .h5{white-space: nowrap;overflow: hidden;-ms-text-overflow: ellipsis;text-overflow: ellipsis;min-height: 23px;}
 .filter_small .h5{display: block;width: 100%;color: #fff;font-size: 13px;margin-bottom: 5px;min-height: 18px;}
 .filter_row>.h5,.filter_row>.cb_list_2{margin-left: 16px;}
 label.h5{display: block;}
+
+.filter_small .currency_select,
+.filter_small .currency_var{height: 35px;line-height: 35px;font-size: 16px;}
+
 
 .filter_form .h5 small{display: block;font-size: 13px;}
 .testimonial_form .filter_row{margin-left: 0;}
@@ -1635,7 +1661,10 @@ input:-moz-placeholder, textarea:-moz-placeholder {}
     -o-flex: 2;
     flex: 2;}
 	.additional_form_cell{width: auto;flex-grow: 1}
-	.additional_form_cell.cell_6{flex-grow: 0;}
+	.additional_form_cell.cell_6{  -webkit-box-flex:0;
+  -webkit-flex-grow:0;
+      -ms-flex-positive:0;
+          flex-grow:0;}
 	.additional_form_row{}
 	.filter_form.tabs .filter_row{padding-right: 20px;-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
