@@ -285,10 +285,10 @@ $(function () {
     $(".sum_selection").each(function () {
         $(this).slider({
             range: "min",
-            min: parseInt($(this).data('min').trim()),
-            max: parseInt($(this).data('max').trim()),
-            value: parseInt($(this).data('min').trim()),
-            step: parseInt($(this).data('max').trim()) / 10,
+            min: parseInt($(this).attr('data-min').trim()),
+            max: parseInt($(this).attr('data-max').trim()),
+            value: parseInt($(this).attr('data-min').trim()),
+            step: parseInt($(this).attr('data-max').trim()) / 10,
             slide: function (event, ui) {
                 var $input = $(this).parents('.sum_ammount_select').find('input.autonum');
                 $input.autoNumeric('set', ui.value);
