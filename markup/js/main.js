@@ -225,6 +225,7 @@ $(function () {
     $.widget("custom.curselect", $.ui.selectmenu, {
         _renderItem: function (ul, item) {
             ul.addClass('cs_select_short_ul');
+            if($(item.element.context.parentElement).parents('.filter_small').length) ul.addClass('cs_select_short_min');
             var li = $("<li>", {text: item.label});
             return li.appendTo(ul);
         }
