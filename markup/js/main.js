@@ -35,7 +35,7 @@ $(function () {
         if (if_mobile()) {
             $(this).find('a').addClass('selected').parents('.output_filter').slideUp();
         }
-        console.log('SOME AJAX EVENT');
+        
     })
 
 
@@ -84,7 +84,7 @@ $(function () {
         e.preventDefault();
         if ($(this).find(':radio')) $("input[name='" + $(this).find('input').attr('name') + "']").prop('checked', false).parents('.cC').removeClass('checked');
         $(this).toggleClass('checked').find('input').click();
-        console.log('OPTION CHANGED ' + $(this).find('input').val());
+        //console.log('OPTION CHANGED ' + $(this).find('input').val());
     }).each(function () {
         if ($(this).find('input').is(':checked')) $(this).addClass('checked');
     })
@@ -232,7 +232,7 @@ $(function () {
     });
     $(".curselect").curselect({
         change: function (event, ui) {
-            console.log('SELECT CHANGED ' + ui.item.value);
+            //console.log('SELECT CHANGED ' + ui.item.value);
             $(ui.item.element.context.parentElement).change().addClass('changed');
             //.change();
         }
@@ -248,7 +248,30 @@ $(function () {
         $(this).addClass('current').siblings().removeClass('current')
     });
 
-    $('.output_scrl').jScrollPane();
+    $('.output_scrl').each(
+        function()
+        {
+          $(this).jScrollPane();
+          var api = $(this).data('jsp');
+          var throttleTimeout;
+          $(window).bind(
+            'resize',
+            function()
+            {
+              if (!throttleTimeout) {
+                throttleTimeout = setTimeout(
+                  function()
+                  {
+                    api.reinitialise();
+                    throttleTimeout = null;
+                  },
+                  50
+                );
+              }
+            }
+          );
+        }
+      );;
 
     $('.rated').each(function () {
         var cf = 1;
@@ -332,7 +355,8 @@ $(function () {
         selectOtherMonths: true,
         onSelect: function (dateText, inst) {
             $(this).next('.dateselect_link').text(dateText)
-        }
+        },
+        altField: "#datefield"
     });
     $('.dateselect_link').click(function (e) {
         e.preventDefault();

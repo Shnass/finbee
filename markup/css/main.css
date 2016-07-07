@@ -918,7 +918,7 @@ top: 24px;}
 .faq_item{background: #cdd7df;margin-bottom: 15px;font-size: 13px;}
 .faq_item:hover{background: #fff;}
 .faq_item:last-child{margin-bottom: 0;}
-.faq_item_h{position: relative;padding: 15px 35px 15px 23px;font-size: 17px;}
+.faq_item_h{position: relative;padding: 15px 35px 15px 23px;font-size: 17px;margin: 0;}
 .opened .faq_item_h{font-weight: bold;}
 .faq_item_c{padding: 0 23px 23px 23px;display: none;}
 
@@ -1571,7 +1571,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {}
 
 @media only screen and (min-width: 1900px) {
     .show_wide{display: block;}
-    .filter_tip{position: absolute;right: 30px;bottom: 0;height: 100%;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;display: flex;}
+    .filter_tip{position: absolute;right: 30px;bottom: 0;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;display: flex;height: calc(100% + 54px);}
     .filter_tip blockquote{width: 290px;padding: 0px;border-radius: 10px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin: 0 23px 0 0;color: #032542;-ms-align-self:center;-webkit-align-self:center;align-self: center;position: relative;margin-bottom: 20px;font-size: 13px;color: #fff;}
     .filter_tip blockquote .h{font-size: 18px;
     font-weight: bold;}
@@ -1840,13 +1840,18 @@ input:-moz-placeholder, textarea:-moz-placeholder {}
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
-    display: flex;-webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    flex-wrap: wrap;}
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+     -ms-flex-wrap: nowrap;
+      -o-flex-wrap: nowrap;
+         flex-wrap: nowrap;
+         width: 100%;}
     .filter_row_fx .filter_cell.filter_cell_slide .h5{
         width: 100%;
+    }
+    .filter_row_fx .filter_cell.filter_cell_slide>.filter_cell:last-child{
+      width: auto;
     }
 
   /*typo*/
