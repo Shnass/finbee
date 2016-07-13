@@ -20,7 +20,7 @@
                <link rel="stylesheet" href="css/normalize.css">
                <link rel="stylesheet" href="css/main.css">
                <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-               <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+               <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
             </head>
             <body>
                <div class="page_container">
@@ -98,7 +98,19 @@
                                  </ul>
                               </div>
                               <div class="page_header_extra_navi" data-navi-type="city_navi">
-                                 <ul>
+                              	 <form action="" class="city_autocomplete">
+                              	 	<div class="string">
+                              	 		<input type="text" class="city_ac" placeholder="Найти город">
+                              	 		<div class="city_ac_results"></div>
+                              	 	</div>
+                              	 	<ul class="short_city_get">
+                          	 			<li><a href="">Москва</a></li>
+                          	 			<li><a href="">Санкт-Петербург</a></li>
+                          	 			<li><a href="">Краснодар</a></li>
+                          	 			<li><a href="">Екатеринбург</a></li>
+                              	 	</ul>
+                              	 </form>
+                                 <!-- <ul>
                                     <li>
                                        <div class="page_header_location_list_h">А</div>
                                        <ul>
@@ -171,7 +183,7 @@
                                           <li><a href="">Архангельск</a></li>
                                        </ul>
                                     </li>
-                                 </ul>
+                                 </ul> -->
                               </div>
                               <div class="page_header_extra_navi" data-navi-type="full_navi">
                                  <ul>
@@ -478,7 +490,7 @@
                           '<a href="$[properties.testimonial]" class="btn btn_dark btn_small wide">Оставить отзыв</a>'+
                           '</div>'
                           );
-                      var myIconContentLayout = ymaps.templateLayoutFactory.createClass('[if properties.type]<i>$[properties.type]</i>[else]$[properties.name][endif]');
+                      var myIconContentLayout = ymaps.templateLayoutFactory.createClass('[if properties.type]<i><span>$[properties.type]</span></i>[else]<em>$[properties.name]111</em>[endif]');
                       var office1 = new ymaps.GeoObject({
                            geometry: {
                                type: "Point",
@@ -499,7 +511,7 @@
                            balloonContentLayout: myBalloonContentLayout,
                            iconContentLayout: myIconContentLayout,
                            hideIconOnBalloonOpen: true,
-                           preset: 'twirl#nightStretchyIcon'
+                           preset: 'islands#circleIcon'
                        }
                        );
                       var office2 = new ymaps.GeoObject({
@@ -522,7 +534,7 @@
                            balloonContentLayout: myBalloonContentLayout,
                            iconContentLayout: myIconContentLayout,
                            hideIconOnBalloonOpen: true,
-                           preset: 'twirl#nightStretchyIcon'
+                           preset: 'islands#circleIcon'
                        }
                        );
                   
@@ -546,7 +558,7 @@
                            balloonContentLayout: myBalloonContentLayout,
                            iconContentLayout: myIconContentLayout,
                            hideIconOnBalloonOpen: true,
-                           preset: 'twirl#nightStretchyIcon'
+                           preset: 'islands#circleIcon'
                        }
                        );
                   
@@ -570,15 +582,16 @@
                            balloonContentLayout: myBalloonContentLayout,
                            iconContentLayout: myIconContentLayout,
                            hideIconOnBalloonOpen: true,
-                           preset: 'twirl#nightStretchyIcon'
+                           preset: 'islands#circleIcon'
                        }
                        );
                   
                       var pointer = new ymaps.GeoObjectCollection(null, {
+                      	  iconLayout: 'default#image',
                           iconImageHref: 'images/marker_single.png', 
                           iconImageSize: [38, 38], 
-                          iconImageOffset: [-19, -19] 
-                          ,hideIconOnBalloonOpen: false
+                          iconImageOffset: [-19, -19],
+                          hideIconOnBalloonOpen: false
                       });
                   
                       pointer.add(new ymaps.Placemark([55.76, 37.64]));

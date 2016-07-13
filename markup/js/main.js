@@ -189,6 +189,17 @@ $(function () {
         $( ".cities_select" ).autocomplete({
           source: cities
         });
+        $( ".city_ac" ).autocomplete({
+          source: function(request, response) {
+                  var results = $.ui.autocomplete.filter(cities, request.term);
+                  response(results.slice(0, 6));
+              },
+          open: function() {
+          $(this).autocomplete("widget")
+               .appendTo(".city_ac_results")
+               .css("position", "static");
+          }
+        });
 
 
     /*** DROP MENUS ***/

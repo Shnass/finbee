@@ -176,9 +176,18 @@ max-height: 36px;}
 .comment_form_row small{float: right;line-height: 37px;font-size: 11px;color: #e7edf1;}
 
 
-
-
-
+.city_ac{width: 100%;background: none;border: 0;border-bottom: 1px solid rgba(255,255,255,0.7);    padding-bottom: 10px;
+    font-size: 20px;
+    color: #fff;}
+.city_ac:focus{border-bottom-color: #fff;}
+.page_header_extra_navi ul.short_city_get{list-style:none;margin:0;padding:0;margin-top: 20px;}
+.short_city_get li{display: inline-block;margin-right: 20px;font-size: 16px;}
+.short_city_get li a{}
+.city_ac_results .ui-autocomplete{background: none;border: 0 !important;max-height: none !important;}
+.city_ac_results .ui-autocomplete .ui-menu-item{padding-left: 0;padding-right: 0;color: rgba(255,255,255,0.7);}
+.city_ac_results .ui-autocomplete .ui-menu-item{padding-left: 0;padding-right: 0;color: rgba(255,255,255,0.7);}
+.city_ac_results .ui-autocomplete .ui-menu-item.ui-state-focus{color: #fff;}
+.city_ac_results .ui-autocomplete .ui-menu-item{background: none !important;border: 0 !important;margin: 0 !important;}
 
 .testimonial_form_uncalled{text-align: center;background: #156cb6;background: -moz-linear-gradient(top,  #156cb6 0%, #1269b3 27%, #085fa8 74%, #055ca5 100%);background: -webkit-linear-gradient(top,  #156cb6 0%,#1269b3 27%,#085fa8 74%,#055ca5 100%);background: linear-gradient(to bottom,  #156cb6 0%,#1269b3 27%,#085fa8 74%,#055ca5 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#156cb6', endColorstr='#055ca5',GradientType=0 );padding: 17px 0;}
 .testimonial_form_uncalled .filter_form_in{text-align: left;}
@@ -1450,6 +1459,25 @@ right: 0;
 margin: 0 auto;
 background: url(../images/bubble_arrow.png) no-repeat;}
 .ymaps-b-balloon__content{border: 0 !important;}
+.ymaps-2-1-41-svg-icon.ymaps-2-1-41-svg-icon{background: none;display: inline-block;
+width: auto !important;
+height: auto !important;
+position: relative !important;
+left: auto !important;top: 0 !important;
+}
+.ymaps-2-1-41-svg-icon-content{
+  width: auto !important;
+  height: auto !important;
+  position: relative !important;
+}
+
+
+.ymaps-2-1-41-svg-icon.ymaps-2-1-41-svg-icon i{left: -17px !important;top: -28px !important;display: inline-block;}
+.ymaps-2-1-41-svg-icon.ymaps-2-1-41-svg-icon i{position: relative;background: #fff;padding: 0 14px 0 28px;margin: 0;border-radius: 14px;line-height: 26px;height: 26px;}
+.ymaps-2-1-41-svg-icon.ymaps-2-1-41-svg-icon i:before{position: absolute;width: 18px;height: 18px;background: url(../images/marker_in_complex.png);position: absolute;left: 0;top: 0;content: '   ';left: 3px;top: 0;bottom: 0;margin: auto;}
+.ymaps-2-1-41-svg-icon.ymaps-2-1-41-svg-icon i span{font-size: 11px;font-family:'roboto';color: #272f48;line-height: 25px;margin: 0;padding: 0;font-style: italic;}
+.ymaps-b-placemark.ymaps-b-placemark_theme_night{width: auto !important;}
+
 
 
 .balloon_tail{text-align: center;margin-top: -2px;}
